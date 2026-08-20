@@ -10,7 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
-
+console.log("Query Client:", import.meta.env.VITE_API_URL);
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider>
