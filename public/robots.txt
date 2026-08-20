@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://mudasir-portfolio-web.vercel.app/sitemap.xml
+Sitemap: https://mudasir-farooq-portfolio.vercel.app/sitemap.xml
