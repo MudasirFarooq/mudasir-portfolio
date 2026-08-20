@@ -13,7 +13,7 @@ const Testimonials = () => {
       role: "Senior Technical Project Manager",
       company: "Vaival Technologies",
       image: "/lovable-uploads/ali-abbas.png",
-      text: "Qamar's outstanding Node.js capabilities, combined with his punctuality, professionalism, and leadership qualities, make him an invaluable asset to any development team. I highly recommend him for any project requiring top-tier Node.js expertise and effective team leadership.",
+      text: "Mudasir's outstanding Node.js capabilities, combined with his punctuality, professionalism, and leadership qualities, make him an invaluable asset to any development team. I highly recommend him for any project requiring top-tier Node.js expertise and effective team leadership.",
       linkedinUrl: "https://www.linkedin.com/in/aliabbaspasha/"
     },
     {
@@ -22,7 +22,7 @@ const Testimonials = () => {
       role: "Team Lead",
       company: "Vaival Technologies",
       image: "/lovable-uploads/muhammad-arsalan.png",
-      text: "Qamar is not only technically proficient but also a great problem solver who approaches issues with a strategic mindset. His attention to detail, ability to write clean and scalable code, and commitment to delivering high-quality solutions make him an invaluable asset to any team.",
+      text: "Mudasir is not only technically proficient but also a great problem solver who approaches issues with a strategic mindset. His attention to detail, ability to write clean and scalable code, and commitment to delivering high-quality solutions make him an invaluable asset to any team.",
       linkedinUrl: "https://www.linkedin.com/in/muhammad-arsalan-5334a2164/"
     },
     {
@@ -31,7 +31,7 @@ const Testimonials = () => {
       role: "Lead Developer",
       company: "Black Lion Innovations Group",
       image: "/lovable-uploads/nimra-haider.png",
-      text: "Qamar consistently impressed me with his strong technical skills, particularly in areas such as database management and server-side scripting. His attention to detail and problem-solving abilities were evident in every task he undertook. I wholeheartedly recommend him for any backend development role.",
+      text: "Mudasir consistently impressed me with his strong technical skills, particularly in areas such as database management and server-side scripting. His attention to detail and problem-solving abilities were evident in every task he undertook. I wholeheartedly recommend him for any backend development role.",
       linkedinUrl: "https://www.linkedin.com/in/nimrahaider320/"
     }
   ];
@@ -108,7 +108,7 @@ const Testimonials = () => {
               Want to add your recommendation?
             </p>
             <a
-              href="https://www.linkedin.com/in/qamar-abbas-8138b911a/"
+              href="https://www.linkedin.com/in/mudasir-m-farooq-b15b9023a/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105"

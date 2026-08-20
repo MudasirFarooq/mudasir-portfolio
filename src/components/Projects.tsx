@@ -51,9 +51,9 @@ const Projects: React.FC = () => {
     },
     {
       title: "CryptoDailySplit — Daily Crypto Investment Platform",
-      description: "Built with Lovable AI, a modern platform for daily cryptocurrency investment tracking and portfolio management. Features real-time crypto data, investment splitting algorithms, and comprehensive portfolio analytics.",
+      description: "A modern platform for daily cryptocurrency investment tracking and portfolio management. Features real-time crypto data, investment splitting algorithms, and comprehensive portfolio analytics.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=center",
-      tech: ["React", "Vite", "Tailwind CSS", "TypeScript", "Lovable"],
+      tech: ["React", "Vite", "Tailwind CSS", "TypeScript"],
       category: "SaaS",
       url: "https://cryptodailysplit.com/"
     },

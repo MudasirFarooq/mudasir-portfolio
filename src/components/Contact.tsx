@@ -11,8 +11,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "reply.qamar@gmail.com",
-      href: "mailto:reply.qamar@gmail.com"
+      value: "mudasirkhokhar27@gmail.com",
+      href: "mailto:mudasirkhokhar27@gmail.com"
     },
     {
       icon: Phone,
@@ -32,14 +32,14 @@ const Contact: React.FC = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/qamar-abbas-8138b911a/",
-      href: "https://linkedin.com/in/qamar-abbas-8138b911a/"
+      value: "linkedin.com/in/mudasir-m-farooq-b15b9023a/",
+      href: "https://www.linkedin.com/in/mudasir-m-farooq-b15b9023a/"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/qamarabbasx",
-      href: "https://github.com/qamarabbasx"
+      value: "github.com/MudasirFarooq",
+      href: "https://github.com/MudasirFarooq"
     }
   ];
 

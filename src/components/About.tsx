@@ -12,7 +12,7 @@ const About: React.FC = () => {
   const personalInfo = [
     { icon: Calendar, label: "Experience", value: "5+ Years" },
     { icon: MapPin, label: "Location", value: "Lahore, Pakistan" },
-    { icon: Mail, label: "Email", value: "reply.qamar@gmail.com" },
+    { icon: Mail, label: "Email", value: "mudasirkhokhar27@gmail.com" },
     { icon: Phone, label: "Phone", value: "+923415456062" },
   ];
 
@@ -46,7 +46,7 @@ const About: React.FC = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // Path to your PDF file in the public folder
-    link.download = 'Qamar_Abbas_Resume.pdf'; // Filename for download
+    link.download = 'Mudasir_Farooq_Resume.pdf'; // Filename for download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -63,7 +63,7 @@ const About: React.FC = () => {
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-800 dark:to-gray-700 p-2">
                   <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
                     <img 
-                      src="/lovable-uploads/6bf158af-c16b-48e3-98d5-a39b0f74790a.png" 
+                      src="/lovable-uploads/mudasir.png"
                       alt="Mudasir Farooq - Software Engineer"
                       className="w-full h-full object-cover object-top"
                     />
@@ -125,7 +125,7 @@ const About: React.FC = () => {
                 {/* Social Links */}
                 <div className="flex items-center space-x-4">
                   <a 
-                    href="https://linkedin.com/in/qamar-abbas-8138b911a/" 
+                    href="https://www.linkedin.com/in/mudasir-m-farooq-b15b9023a/"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 hover:bg-blue-200 dark:hover:bg-blue-900/50 transition-colors duration-300"
@@ -133,7 +133,7 @@ const About: React.FC = () => {
                     <Linkedin className="w-5 h-5 text-blue-500" />
                   </a>
                   <a 
-                    href="https://github.com/qamarabbasx" 
+                    href="https://github.com/MudasirFarooq"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"

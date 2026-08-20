@@ -38,7 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, setActiveSection
               className="text-lg sm:text-xl lg:text-2xl font-bold cursor-pointer text-gray-900 dark:text-white hover:text-blue-500 transition-colors duration-300"
               onClick={() => scrollToSection('about')}
             >
-              Qamar<span className="text-blue-500">.</span>
+              Mudasir<span className="text-blue-500">.</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
