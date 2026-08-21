@@ -40,7 +40,7 @@ const About: React.FC = () => {
     }
   ];
 
-  const typewriterWords = ["Full Stack Engineer", "React Developer", "Node.js Developer", "TypeScript Developer"];
+  const typewriterWords = ["Full Stack Engineer", "MERN Stack Developer", "Frontend Developer"];
 
   const handleDownloadCV = () => {
     // Create a link element and trigger download
