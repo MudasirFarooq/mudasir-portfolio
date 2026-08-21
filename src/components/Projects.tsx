@@ -10,6 +10,15 @@ import {
   DialogDescription,
 } from './ui/dialog';
 
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  tech: string[];
+  category: string;
+  url?: string;
+}
+
 const Projects: React.FC = () => {
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollTrigger({ 
     threshold: 0.2,
@@ -40,54 +49,83 @@ const Projects: React.FC = () => {
     }
   }, []);
 
-  const projects = React.useMemo(() => [
+  const projects = React.useMemo<Project[]>(() => [
     {
-      title: "TaskPay — Secure Service Contracting Platform",
-      description: "Built a scalable platform using Next.js and Google Cloud, supporting thousands of real-time transactions weekly. Integrated ACH, Wire, RTP payments via IBANERA, NMI, and PayPal, increasing success rates by 30%.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
-      tech: ["Nest.js", "Next.js", "GCP", "Fireblocks", "NMI", "PayPal", "PostgreSQL"],
-      category: "Full Stack",
-      url: "https://taskpay.com"
-    },
-    {
-      title: "CryptoDailySplit — Daily Crypto Investment Platform",
-      description: "A modern platform for daily cryptocurrency investment tracking and portfolio management. Features real-time crypto data, investment splitting algorithms, and comprehensive portfolio analytics.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=center",
-      tech: ["React", "Vite", "Tailwind CSS", "TypeScript"],
-      category: "SaaS",
-      url: "https://cryptodailysplit.com/"
-    },
-
-    {
-      title: "Clone Hub — AI-Powered Digital Engagement Platform",
-      description: "Developed a SaaS product with Next.js and PostgreSQL, powering over 10,000 AI clones for 24/7 audience engagement. Boosted user retention by 40% with monetization via subscriptions and pay-per-use.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=center",
-      tech: ["Nest.js", "Next.js", "PostgreSQL", "AI/ML"],
-      category: "SaaS",
-      url: "https://clonehub.com"
-    },
-    {
-      title: "AAA Protect — Comprehensive Protection Platform",
-      description: "Engineered a full-service platform using Next.js, Nest.js, and MongoDB, serving 5,000+ commercial drivers. Integrated Stripe for secure payment handling, increasing transaction success by 30%.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
-      tech: ["Nest.js", "Next.js", "MongoDB", "Stripe"],
-      category: "Enterprise",
-      url: "https://aaaprotect.com/"
-    },
-    {
-      title: "Warehouse Management System",
-      description: "Developed a centralized warehouse management system integrated with Amazon, Shopify, and Walmart, reducing order errors by 40% and streamlining inventory workflows.",
+      title: "IntellyPlan — Retail Chain Operations Platform",
+      description: "A platform for retail chain operations covering full store lifecycle management, from setup to day-to-day operations.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&crop=center",
-      tech: ["Node.js", "Express", "React", "MySQL", "MongoDB"],
+      tech: ["Vite.js", "ASP.NET"],
       category: "Enterprise"
     },
     {
-      title: "Custom Shopify Apps",
-      description: "Led development of custom Shopify apps using Gadget.dev platform, enabling seamless e-commerce integrations and increasing merchant adoption by 40%.",
+      title: "NivonAI — Multi-Tenant Tender Platform with AI Chatbot",
+      description: "A German tenders-based multi-tenant system featuring a generative AI chatbot with retrieval-augmented generation (RAG) for tender search and insights.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=center",
+      tech: ["MERN Stack", "LangChain", "OpenAI API"],
+      category: "SaaS"
+    },
+    {
+      title: "Vaival Agent — AI Chat Agent for PRD Documentation",
+      description: "An AI chat agent that helps teams generate and refine Product Requirement Documents (PRDs) through natural conversation.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
+      tech: ["Next.js", "FastAPI", "Claude API"],
+      category: "SaaS"
+    },
+    {
+      title: "TaskPay — Job and Task-Based Platform",
+      description: "A job and task-based platform enabling clients to post tasks and service providers to deliver them, built end-to-end with the MERN stack.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
+      tech: ["MERN Stack"],
+      category: "Full Stack"
+    },
+    {
+      title: "CloneHub — AI Chat and Voice Cloning Platform",
+      description: "AI-powered chat and voice cloning platform combining real-time WebSocket communication with the ElevenLabs API for realistic digital personas.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=center",
+      tech: ["MERN Stack", "WebSocket", "FastAPI", "ElevenLabs API"],
+      category: "SaaS"
+    },
+    {
+      title: "SalesPop — Shopify App",
+      description: "A Shopify app that displays real-time sales notifications to boost customer trust and conversions.",
       image: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&h=400&fit=crop&crop=center",
-      tech: ["Node.js", "Gadget.dev", "Shopify API", "Express"],
-      category: "E-commerce",
-      url: "https://carecart.io/"
+      tech: ["React.js", "JavaScript", "Shopify Polaris"],
+      category: "E-commerce"
+    },
+    {
+      title: "TimeXbar — Shopify App",
+      description: "A Shopify app that adds customizable countdown timers to store pages to drive urgency and sales.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
+      tech: ["React.js", "JavaScript"],
+      category: "E-commerce"
+    },
+    {
+      title: "Wheelify — Shopify App",
+      description: "A Shopify app offering gamified spin-to-win discount wheels to increase customer engagement and email capture.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=center",
+      tech: ["React.js", "JavaScript"],
+      category: "E-commerce"
+    },
+    {
+      title: "VisitorCounter — Shopify App",
+      description: "A Shopify app that displays live visitor and stock counters to create urgency and social proof on product pages.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&crop=center",
+      tech: ["React.js", "JavaScript"],
+      category: "E-commerce"
+    },
+    {
+      title: "BreedersDen — NFT Marketplace",
+      description: "An NFT marketplace built with Web3.js and Solidity smart contracts, enabling minting, trading, and breeding mechanics on-chain.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=center",
+      tech: ["MERN Stack", "Web3.js", "Solidity"],
+      category: "Full Stack"
+    },
+    {
+      title: "ERP System — Employee and Payroll Management",
+      description: "An ERP system for employee and payroll management, built with a typed data layer using TypeORM.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center",
+      tech: ["MERN Stack", "TypeORM"],
+      category: "Enterprise"
     }
   ], []);
 

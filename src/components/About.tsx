@@ -10,37 +10,37 @@ const About: React.FC = () => {
   const { elementRef: skillsRef, isVisible: skillsVisible } = useScrollTrigger({ threshold: 0.4 });
 
   const personalInfo = [
-    { icon: Calendar, label: "Experience", value: "5+ Years" },
+    { icon: Calendar, label: "Experience", value: "5 Years" },
     { icon: MapPin, label: "Location", value: "Lahore, Pakistan" },
     { icon: Mail, label: "Email", value: "mudasirkhokhar27@gmail.com" },
-    { icon: Phone, label: "Phone", value: "+923415456062" },
+    { icon: Phone, label: "Phone", value: "+92-307-456-6256" },
   ];
 
   const skills = [
-    { name: "Node.js", percentage: 95 },
+    { name: "TypeScript", percentage: 95 },
+    { name: "React.js", percentage: 92 },
     { name: "Next.js", percentage: 90 },
-    { name: "Nest.js", percentage: 90 },
-    { name: "TypeScript", percentage: 88 },
-    { name: "PostgreSQL", percentage: 85 },
-    { name: "MongoDB", percentage: 85 },
+    { name: "Node.js", percentage: 90 },
+    { name: "Nest.js", percentage: 85 },
+    { name: "Python / FastAPI", percentage: 80 },
   ];
 
   const workExperience = [
     {
       company: "Vaival Technologies",
       position: "Software Engineer",
-      duration: "June 2023 – Present",
+      duration: "November 2023 – Present",
       location: "Lahore, Pakistan"
     },
     {
-      company: "Blinkers",
-      position: "Associate Software Engineer", 
-      duration: "Jan 2021 – June 2023",
+      company: "Codility Solutions",
+      position: "Associate Software Engineer",
+      duration: "October 2021 – November 2023",
       location: "Lahore, Pakistan"
     }
   ];
 
-  const typewriterWords = ["Software Engineer", "Web Designer", "Freelancer", "Backend Developer", "Full Stack Developer"];
+  const typewriterWords = ["Full Stack Engineer", "React Developer", "Node.js Developer", "TypeScript Developer"];
 
   const handleDownloadCV = () => {
     // Create a link element and trigger download
@@ -64,7 +64,7 @@ const About: React.FC = () => {
                   <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
                     <img 
                       src="/lovable-uploads/mudasir.png"
-                      alt="Mudasir Farooq - Software Engineer"
+                      alt="Mudasir Farooq - Full Stack Engineer"
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
@@ -94,16 +94,15 @@ const About: React.FC = () => {
                     Mudasir Farooq
                   </h1>
                   <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8">
-                    Backend-focused Full Stack Developer
+                    Full Stack Engineer
                   </h2>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
-                    Backend-focused Full-Stack Developer with 5+ years of experience in the MERN stack, 
-                    specializing in backend architecture and scalable API development. Proficient in building 
-                    robust server-side logic, integrating modern frontend interfaces, and delivering 
-                    high-performance web applications. Proven track record of Shopify app development using 
-                    Remix, Gadget, and Polaris, delivering solutions to 100,000+ merchants. Proficient in Agile 
-                    methodologies, third-party API integrations, and delivering high-quality, maintainable code 
-                    across frontend and backend architectures.
+                    Full Stack Engineer with almost 5 years of experience delivering scalable, high-performance
+                    web applications using the MERN stack. Strong focus on TypeScript-first development across
+                    frontend and backend, including React.js, Next.js, Node.js, Nest.js, Express.js, Python, and
+                    FastAPI. Expert in building real-time systems with WebSockets, Socket.IO, and event-driven
+                    architectures. Consistently improving performance, maintainability, and reliability, delivering
+                    faster load times and reduced runtime errors.
                   </p>
                 </div>
 
@@ -223,9 +222,9 @@ const About: React.FC = () => {
             </div>
             
             <div className="bg-gray-50 dark:bg-gray-800 p-6 sm:p-8 rounded-2xl text-center">
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">BS in Software Engineering</h4>
-              <h5 className="text-base sm:text-lg font-semibold text-blue-500 mb-2">University of Sargodha</h5>
-              <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">Aug 2015 – June 2019</p>
+              <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Bachelor of Science in Computer Science</h4>
+              <h5 className="text-base sm:text-lg font-semibold text-blue-500 mb-2">University of Punjab</h5>
+              <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">Graduated: January 2022</p>
             </div>
           </div>
         </div>
