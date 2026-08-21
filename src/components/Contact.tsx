@@ -17,8 +17,8 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+923415456062",
-      href: "tel:+923415456062"
+      value: "+92-307-456-6256",
+      href: "tel:+923074566256"
     },
     {
       icon: MapPin,
@@ -68,9 +68,9 @@ const Contact: React.FC = () => {
                   Contact Information
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                  Backend-focused Full-Stack Developer with 4+ years of experience. 
-                  Always interested in new opportunities and exciting projects. 
-                  Whether you need backend architecture, scalable APIs, or full-stack development, 
+                  Full Stack Engineer with almost 5 years of experience across the MERN stack.
+                  Always interested in new opportunities and exciting projects.
+                  Whether you need real-time systems, scalable APIs, or full-stack development,
                   feel free to reach out!
                 </p>
               </div>
